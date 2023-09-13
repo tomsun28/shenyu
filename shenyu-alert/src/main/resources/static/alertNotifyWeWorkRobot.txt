@@ -1,0 +1,3 @@
+<font color="info">[(${title})]</font>
+[(${triggerTimeLabel})] : [(${triggerTime})]
+[(${contentLabel})] : [(${content})]
