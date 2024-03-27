@@ -54,8 +54,8 @@ services:
     restart: always
     environment:
       - shenyu_register_serverLists=http://shenyu-admin:9095
-      - shenyu.sdk.register-type=zookeeper
-      - shenyu.sdk.server-lists=shenyu-zk:2181
+      - shenyu_sdk_register-type=zookeeper
+      - shenyu_sdk_server-lists=shenyu-zk:2181
     healthcheck:
       test: [ "CMD", "wget", "http://shenyu-examples-sdk-http:8899/actuator/health | grep UP || exit 1"]
       timeout: 2s
@@ -78,8 +78,8 @@ services:
     restart: always
     environment:
       - shenyu_register_serverLists=http://shenyu-admin:9095
-      - shenyu.sdk.registerType=zookeeper
-      - shenyu.sdk.serverLists=shenyu-zk:2181
+      - shenyu_sdk_registerType=zookeeper
+      - shenyu_sdk_serverLists=shenyu-zk:2181
     healthcheck:
       test: [ "CMD", "wget", "http://shenyu-examples-sdk-feign:8898/actuator/health | grep UP || exit 1" ]
       timeout: 2s

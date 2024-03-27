@@ -59,7 +59,7 @@ services:
     networks:
       - shenyu
     environment:
-      - dubbo.registry.address=zookeeper://shenyu-zk:2181
+      - dubbo_registry_address=zookeeper://shenyu-zk:2181
       - shenyu_register_serverLists=http://shenyu-admin:9095
 
   shenyu-examples-sdk-apache-dubbo-consumer:
